@@ -1,8 +1,8 @@
 // Encapsulation && Private && Protacted
 
 class Student{
-    private name:string;
-    private roll:number;
+    private name!:string;
+    private roll!:number;
 
     setName(name:string){
         this.name = name;
