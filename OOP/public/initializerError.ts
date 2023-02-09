@@ -11,6 +11,10 @@ class Player{
     name!:string;
     health!:number;
     cursh!:Player;
+
+    constructor(){
+        console.log(this.name);
+    }
     
 }
 

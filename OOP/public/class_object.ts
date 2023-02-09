@@ -1,12 +1,12 @@
 // Simple Class, Constructor and Object 
 
 class Movie{
-    hero: string;
-    noOfMovie: number;
-    collection: any = Movie;
+    // private hero: string;
+    protected noOfMovie: number;
+    public collection: any = Movie;
 
-    constructor(hero:string,noOfMovie:number){
-        this.hero = hero;
+    public constructor(private hero:string,noOfMovie:number){
+        // this.hero = hero;
         this.noOfMovie = noOfMovie;
     }
 
@@ -14,6 +14,11 @@ class Movie{
         console.log(`\n Hero Name : ${this.hero} \n Number Of Movies : ${this.noOfMovie} \n`);
         console.log(this.collection);
     }
+}
+
+class newMovies extends Movie{
+    oldMovies = super.noOfMovie;
+    
 }
 
 const ajay = new Movie("Ajay",21);

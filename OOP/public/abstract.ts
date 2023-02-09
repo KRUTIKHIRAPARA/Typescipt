@@ -1,7 +1,6 @@
 // Abstract Class && Privations
  
 abstract class Laptop{
-    
     abstract storgeType():void;
 }
 
@@ -17,6 +16,9 @@ class lowLaptop extends superLaptop{
 
 const lp = new lowLaptop();
 lp.storgeType();
+
+
+//------------- OTHER EXAMPLE 
 
 abstract class Character{
     hundger:number = 0;
