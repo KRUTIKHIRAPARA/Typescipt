@@ -1,4 +1,4 @@
-Logical/src
-Logical/tsconfig.json
-OOP/src
-OOP/tsconfig.json
+/OOP/src
+/OOP/tsconfig.json
+/Logical_Program/src
+/Logical_Program/tsconfig.json

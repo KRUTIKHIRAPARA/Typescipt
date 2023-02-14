@@ -14,9 +14,9 @@ NOTE :
 
 // --------(a) Using if....else
 
-const prompt=require("prompt-sync")({sigint:true}); 
+// const prompt=require("prompt-sync")({sigint:true}); 
 
 
-const whetherNumber = prompt("Enter Any Whether Number : ");
+// const whetherNumber = prompt("Enter Any Whether Number : ");
 
-console.log(typeof parseInt( whetherNumber));
+// console.log(typeof parseInt( whetherNumber));
