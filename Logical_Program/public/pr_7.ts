@@ -19,4 +19,4 @@ NOTE :
 
 // const whetherNumber = prompt("Enter Any Whether Number : ");
 
-// console.log(typeof parseInt( whetherNumber));
+// console.log(typeof whetherNumber);
