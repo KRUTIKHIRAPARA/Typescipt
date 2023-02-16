@@ -4,11 +4,13 @@ var reverseData:string = "Jaimin";
 
 var splitData = reverseData.split("");
 
-var conditionData!:string;
+var conditionData:string = "";
 
-for(let i=splitData.length; i>=0; i--)
+for(var i=splitData.length - 1; i >=0 ;i--)
 {
     conditionData += splitData[i];
+    // console.log(splitData[i]);
+    
 }
 
 console.log(conditionData);
