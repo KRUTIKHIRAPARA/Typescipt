@@ -1,48 +1,15 @@
-// 23. Write a program to read any integer number and print it in reverse. 
+// 24. Write a program to read any number and print the sum of all values.
+//     For ex. Input - 3564 Output - 3+5+6+4 = 18 
 
 
-export{};
-
-var num:number = 3455;
-
-//---------First Way
-
-var result:number = 0;
+var num:number = 3564;
+var sum:number = 0;
 
 while(num > 0)
 {
     var temp = num % 10;
-    result = result * 10  + temp;
+    sum += temp;
     num = Math.floor(num/10);
 }
 
-console.log(result);
-
-
-//---------Second Way
-
-
-// var temp:any = num.toString();
-// var reverseNum:number=0;
-
-
-// for(let i=temp.length-1; i>=0; i--)
-// {
-//     reverseNum += temp[i];
-//     console.log(reverseNum);
-// }
-    
-// console.log(reverseNum);
-    
-    
-
-//---------Third Way
-    
-    
-// function reverse_number(n:any)
-// {
-// 	n = n + "";
-// 	return n.split("").reverse().join("");
-// }
-// console.log(Number(reverse_number(3455)));
-
+console.log(sum);
