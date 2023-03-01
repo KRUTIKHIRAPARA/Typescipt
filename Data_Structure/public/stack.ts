@@ -47,3 +47,40 @@ export{};
     pop();
 
     console.log(data);
+
+
+// OTHER WAY
+class Stack<T> {
+    private array: T[] = [];
+  
+    pop(): T | undefined {
+      if (this.isEmpty()){};
+  
+      return this.array.pop();
+    }
+  
+    push(data: T): void {
+      this.array.push(data);
+    }
+  
+    peek(): T {
+      if (this.isEmpty()){};
+  
+      return this.array[this.array.length - 1];
+    }
+  
+    isEmpty(): boolean {
+      return this.array.length === 0;
+    }
+  }
+
+  var st = new Stack();
+  st.push(34);
+  st.push(4);
+  st.push(3);
+
+  st.peek();
+
+  st.pop();
+
+  console.log(st.peek());
